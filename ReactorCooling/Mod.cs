@@ -1,16 +1,14 @@
-﻿using PulsarPluginLoader;
+﻿using PulsarModLoader;
 
 namespace ReactorCooling
 {
-    public class Plugin : PulsarPlugin
+    public class Mod : PulsarMod
     {
         public override string Version => "1.0.0";
 
         public override string Author => "Dragon";
 
-        public override string ShortDescription => "Adds fire extinguisher and fire-killer grenade cooling back into the game";
-
-        public override string LongDescription => base.LongDescription;
+        public override string LongDescription => "Adds fire-killer grenade Reactor cooling effect back into the game";
 
         public override string Name => "ReactorCooling";
 
