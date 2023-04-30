@@ -8,7 +8,7 @@ namespace ReactorCooling
     {
         private static void Prefix(PLAntiFireGrenadeInstance __instance, ref float ___m_FirefightingEffect_Strength)
         {
-            if (__instance.MyTLI != null && __instance.MyTLI.MyShipInfo != null)
+            if (((PhotonNetwork.isMasterClient && Mod.Enabled) || Mod.HostEnabled) && __instance.MyTLI != null && __instance.MyTLI.MyShipInfo != null)
             {
                 if (__instance.MyTLI.MyShipInfo.ReactorInstance != null)
                 {
@@ -26,7 +26,7 @@ namespace ReactorCooling
     {
         private static void Prefix(PLAntiFireGrenadeInstance __instance, ref float ___m_FirefightingEffect_Strength)
         {
-            if (__instance.MyTLI != null && __instance.MyTLI.MyShipInfo != null)
+            if (((PhotonNetwork.isMasterClient && Mod.Enabled) || Mod.HostEnabled) && __instance.MyTLI != null && __instance.MyTLI.MyShipInfo != null)
             {
                 if (__instance.MyTLI.MyShipInfo.ReactorInstance != null)
                 {
